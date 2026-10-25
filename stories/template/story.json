@@ -630,6 +630,27 @@
           "key": "secret",
           "value": "隐藏真相"
         }
+      ],
+      "conditions": [
+        {
+          "key": "clue:all-clues",
+          "op": "eq",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "read-secret-note",
+      "label": "读完隐藏备忘录",
+      "type": "event",
+      "event": "read",
+      "target": "note-star-locked",
+      "actions": [
+        {
+          "type": "clue",
+          "key": "all-clues",
+          "value": true
+        }
       ]
     }
   ],
@@ -678,11 +699,21 @@
       "name": "隐藏真相",
       "steps": [
         {
+          "event": "read",
+          "target": "clue-photo-reflection"
+        },
+        {
+          "event": "read",
+          "target": "note-star-locked"
+        },
+        {
           "choose": "ending-secret"
         }
       ],
       "ending": "隐藏真相",
-      "expectUnlocked": []
+      "expectUnlocked": [
+        "note-star-locked"
+      ]
     }
   ]
 }
