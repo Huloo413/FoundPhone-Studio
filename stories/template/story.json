@@ -1,699 +1,594 @@
 {
   "scriptVersion": 1,
-  "id": "ui-test-phone-v2",
-  "title": "捡手机",
-  "description": "仅用于界面测试，不含剧情",
-  "revision": 2,
+  "id": "zb1-found-phone-comedy",
+  "title": "捡到 ZEROBASEONE 的手机",
+  "description": "一场从排练室开始、最终在冰箱边结束的爆笑寻机行动。纯属虚构的粉丝向互动故事。",
+  "revision": 3,
   "phone": {
-    "owner": "机主",
+    "owner": "失物招领处的你",
     "date": "2026-10-25",
-    "time": "09:41",
-    "battery": 94,
+    "time": "21:41",
+    "battery": 87,
     "network": "5G",
-    "wallpaper": "apple-wwdc26"
+    "wallpaper": "sage",
+    "theme": "light",
+    "notifications": true
   },
   "installedApps": [
-    "appstore",
-    {
-      "id": "wechat",
-      "name": "微信",
-      "installed": true,
-      "visible": true,
-      "dock": false,
-      "folder": "",
-      "icon": ""
-    },
-    {
-      "id": "douyin",
-      "name": "抖音",
-      "installed": true,
-      "visible": true,
-      "dock": false,
-      "folder": "",
-      "icon": ""
-    },
     "phone",
     "messages",
     "contacts",
     "photos",
-    {
-      "id": "camera",
-      "name": "相机",
-      "installed": true,
-      "visible": true,
-      "dock": true,
-      "folder": "",
-      "icon": ""
-    },
-    "safari",
     "notes",
     "calendar",
-    "mail",
-    "clock",
     "reminders",
     "files",
-    "music",
-    "maps",
-    "weather",
-    "wallet",
-    "health",
-    "find",
-    "calculator",
-    "settings",
-    "qq",
-    "weibo",
-    "redbook",
-    "bilibili",
-    "alipay",
-    "taobao",
-    "netease",
-    "delivery",
-    "forum",
-    "whatsapp",
+    "wechat",
+    "kakao",
     "instagram",
-    "tiktok",
     "twitter",
-    "telegram",
-    "discord",
-    "youtube",
-    "line",
-    "snapchat",
-    "facebook",
-    "messenger",
-    "reddit",
-    "spotify",
-    "netflix",
-    "pinterest",
-    "threads",
-    "kakao"
+    "camera",
+    "safari"
   ],
   "contacts": [
     {
-      "id": "test-contact",
-      "name": "测试联系人",
-      "phone": "",
-      "bio": "这是一条测试内容。"
+      "id": "hanbin",
+      "name": "成韩彬",
+      "phone": "010-1000-0001",
+      "bio": "群聊秩序维护员（经常失败）"
+    },
+    {
+      "id": "matthew",
+      "name": "石马修",
+      "phone": "010-1000-0002",
+      "bio": "热心解释型嫌疑人"
+    },
+    {
+      "id": "gunwook",
+      "name": "朴乾旭",
+      "phone": "010-1000-0003",
+      "bio": "把表情包当证据的侦探"
+    },
+    {
+      "id": "taerae",
+      "name": "金泰来",
+      "phone": "010-1000-0004",
+      "bio": "吐槽担当，负责说出大家不敢说的话"
+    },
+    {
+      "id": "jiwoong",
+      "name": "金地雄",
+      "phone": "010-1000-0005",
+      "bio": "看起来最冷静、最后才公布关键线索"
     }
   ],
   "chats": [
     {
-      "id": "test-chat-messages",
-      "app": "messages",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-messages",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-wechat",
-      "app": "wechat",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-wechat",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-qq",
-      "app": "qq",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-qq",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-whatsapp",
-      "app": "whatsapp",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-whatsapp",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-telegram",
-      "app": "telegram",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-telegram",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-discord",
-      "app": "discord",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-discord",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-line",
-      "app": "line",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-line",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-messenger",
-      "app": "messenger",
-      "title": "测试会话",
-      "participants": [
-        "owner",
-        "test-contact"
-      ],
-      "messages": [
-        {
-          "id": "test-message-messenger",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
-        }
-      ]
-    },
-    {
-      "id": "test-chat-kakao",
+      "id": "chat-group-zb1",
       "app": "kakao",
-      "title": "测试会话",
+      "title": "今天谁拿了手机？（6）",
       "participants": [
         "owner",
-        "test-contact"
+        "hanbin",
+        "matthew",
+        "gunwook",
+        "taerae",
+        "jiwoong"
       ],
       "messages": [
         {
-          "id": "test-message-kakao",
-          "body": "这是一条测试消息。",
-          "senderId": "test-contact"
+          "id": "g01",
+          "title": "",
+          "body": "大家先冷静。请确认最后一次看到手机的时间。",
+          "senderId": "hanbin",
+          "time": "21:10"
         },
         {
-          "id": "test-reply-kakao",
-          "body": "这是一条测试回复。",
-          "senderId": "owner"
+          "id": "g02",
+          "title": "",
+          "body": "我确认一下：我们现在是在一个六人群里找五个人的手机吗？",
+          "senderId": "taerae",
+          "time": "21:11"
+        },
+        {
+          "id": "g03",
+          "title": "",
+          "body": "等等，我不是拿了手机，我只是拿起来看了一眼它是不是手机。",
+          "senderId": "matthew",
+          "time": "21:12"
+        },
+        {
+          "id": "g04",
+          "title": "",
+          "body": "嫌疑人一号已自行供述。记录。",
+          "senderId": "gunwook",
+          "time": "21:13"
+        },
+        {
+          "id": "g05",
+          "title": "",
+          "body": "我没有！我只是想看时间！",
+          "senderId": "matthew",
+          "time": "21:14"
+        },
+        {
+          "id": "g06",
+          "title": "",
+          "body": "时间可以看手表。",
+          "senderId": "hanbin",
+          "time": "21:15"
+        },
+        {
+          "id": "g07",
+          "title": "",
+          "body": "哥，现场没有手表，只有五个人同时打开手机找手机。",
+          "senderId": "taerae",
+          "time": "21:16"
+        },
+        {
+          "id": "g08",
+          "title": "",
+          "body": "我建立了嫌疑人评分表。第一名：所有人。",
+          "senderId": "gunwook",
+          "time": "21:17"
+        },
+        {
+          "id": "g09",
+          "title": "",
+          "body": "你们先看相册最后一张照片。",
+          "senderId": "jiwoong",
+          "time": "21:18"
+        },
+        {
+          "id": "g10",
+          "title": "",
+          "body": "相册里怎么全是糊掉的舞台地板？",
+          "senderId": "owner",
+          "time": "21:19"
+        },
+        {
+          "id": "g11",
+          "title": "",
+          "body": "那是艺术。动态模糊，懂吗？",
+          "senderId": "matthew",
+          "time": "21:20"
+        },
+        {
+          "id": "g12",
+          "title": "",
+          "body": "懂了，手机在艺术里失踪了。",
+          "senderId": "taerae",
+          "time": "21:21"
+        },
+        {
+          "id": "g13",
+          "title": "",
+          "body": "请不要继续发地板照片。",
+          "senderId": "hanbin",
+          "time": "21:22"
+        },
+        {
+          "id": "g14",
+          "title": "",
+          "body": "太晚了，我做成了九宫格。",
+          "senderId": "gunwook",
+          "time": "21:23"
+        },
+        {
+          "id": "g15",
+          "title": "",
+          "body": "日历里有一条提醒：‘把手机从冰箱上拿下来’。",
+          "senderId": "jiwoong",
+          "time": "21:24"
+        },
+        {
+          "id": "g16",
+          "title": "",
+          "body": "……为什么手机会在冰箱上？",
+          "senderId": "taerae",
+          "time": "21:25"
+        },
+        {
+          "id": "g17",
+          "title": "",
+          "body": "为了降温？",
+          "senderId": "matthew",
+          "time": "21:26"
+        },
+        {
+          "id": "g18",
+          "title": "",
+          "body": "没有人需要把手机放进冰箱。",
+          "senderId": "hanbin",
+          "time": "21:27"
+        },
+        {
+          "id": "g19",
+          "title": "",
+          "body": "你们五分钟前投票选了‘冰箱冷静一下’。",
+          "senderId": "jiwoong",
+          "time": "21:28"
+        },
+        {
+          "id": "g20",
+          "title": "",
+          "body": "新证据：动机、机会、冰箱。案件即将结案。",
+          "senderId": "gunwook",
+          "time": "21:29"
+        }
+      ]
+    },
+    {
+      "id": "chat-matthew",
+      "app": "kakao",
+      "title": "石马修",
+      "participants": [
+        "owner",
+        "matthew"
+      ],
+      "messages": [
+        {
+          "id": "m01",
+          "title": "",
+          "body": "我真的没有拿！我只是帮它拍了张照。",
+          "senderId": "matthew",
+          "time": "21:10"
+        },
+        {
+          "id": "m02",
+          "title": "",
+          "body": "你拍的是黑屏。",
+          "senderId": "owner",
+          "time": "21:11"
+        },
+        {
+          "id": "m03",
+          "title": "",
+          "body": "那说明它很有隐私意识。",
+          "senderId": "matthew",
+          "time": "21:12"
+        },
+        {
+          "id": "m04",
+          "title": "",
+          "body": "等等，照片反光里好像有一个蓝色星星手机壳。",
+          "senderId": "matthew",
+          "time": "21:13"
+        }
+      ]
+    },
+    {
+      "id": "chat-taerae",
+      "app": "wechat",
+      "title": "金泰来",
+      "participants": [
+        "owner",
+        "taerae"
+      ],
+      "messages": [
+        {
+          "id": "t01",
+          "title": "",
+          "body": "如果你找到手机，先别告诉他们。",
+          "senderId": "taerae",
+          "time": "21:10"
+        },
+        {
+          "id": "t02",
+          "title": "",
+          "body": "为什么？",
+          "senderId": "owner",
+          "time": "21:11"
+        },
+        {
+          "id": "t03",
+          "title": "",
+          "body": "我想看看他们能把一件小事开成几次会议。",
+          "senderId": "taerae",
+          "time": "21:12"
+        },
+        {
+          "id": "t04",
+          "title": "",
+          "body": "目前是三次，含一次紧急冰箱复盘。",
+          "senderId": "taerae",
+          "time": "21:13"
+        }
+      ]
+    },
+    {
+      "id": "chat-jiwoong",
+      "app": "messages",
+      "title": "金地雄",
+      "participants": [
+        "owner",
+        "jiwoong"
+      ],
+      "messages": [
+        {
+          "id": "j01",
+          "title": "",
+          "body": "别急，去看备忘录里标题带⭐的那条。",
+          "senderId": "jiwoong",
+          "time": "21:10"
+        },
+        {
+          "id": "j02",
+          "title": "",
+          "body": "密码是什么？",
+          "senderId": "owner",
+          "time": "21:11"
+        },
+        {
+          "id": "j03",
+          "title": "",
+          "body": "群聊里有人已经把它说出来了。提示：不是生日。",
+          "senderId": "jiwoong",
+          "time": "21:12"
         }
       ]
     }
   ],
   "content": {
-    "phone": [
-      {
-        "id": "test-item-phone",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "contacts": [
-      {
-        "id": "test-item-contacts",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
     "photos": [
       {
-        "id": "test-item-photos",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "camera": [
+        "id": "photo-blurry-floor",
+        "title": "排练室地板（第 17 张）",
+        "body": "一张严重失焦的地板。照片边缘隐约露出蓝色星星手机壳，以及一只贴着便利贴的水杯。",
+        "kind": "image",
+        "time": "21:12",
+        "sender": "相册"
+      },
       {
-        "id": "test-item-camera",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "safari": [
+        "id": "photo-fridge",
+        "title": "证据照片：冰箱",
+        "body": "冰箱门上贴着一张便利贴：‘手机在这里冷静，谁都不许拿。’字迹看起来像是五个人轮流写的。",
+        "kind": "image",
+        "time": "21:19",
+        "sender": "相册"
+      },
       {
-        "id": "test-item-safari",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
+        "id": "clue-photo-reflection",
+        "title": "隐藏线索：反光里的星星壳",
+        "body": "放大马修拍的黑屏照片，反光里确实有蓝色星星手机壳。背景不是排练室，而是休息区冰箱旁。",
         "kind": "text",
-        "meta": {}
+        "time": "21:22",
+        "sender": "线索系统"
       }
     ],
     "notes": [
       {
-        "id": "test-item-notes",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
+        "id": "note-star-locked",
+        "title": "⭐ 重要备忘录（需要密码）",
+        "body": "恭喜，你成功找到隐藏备忘录！\n\n真相：手机并没有被偷。大家排练后把手机放在冰箱上方的架子上，想拍一张‘全员冷静’的合照，结果拍完就忘了。\n\n真正的凶手不是任何一个成员——是大家一起写的提醒事项：‘谁最后离开，谁拿手机。’而所有人都以为别人会拿。\n\n附加备注：请不要把这件事写进团史。",
+        "kind": "note",
+        "time": "21:23",
+        "sender": "机主",
+        "password": "1025",
+        "hidden": true
+      },
+      {
+        "id": "note-checklist",
+        "title": "失物招领行动清单",
+        "body": "1. 检查群聊\n2. 检查相册\n3. 不要再开会\n4. 如果有人提议冰箱复盘，请立刻结束会议",
+        "kind": "note",
+        "time": "21:08",
+        "sender": "成韩彬"
+      },
+      {
+        "id": "note-meeting-minutes",
+        "title": "紧急会议纪要（不紧急）",
+        "body": "议题：手机失踪。\n成韩彬：建议按流程调查。\n石马修：我只是看了一眼。\n朴乾旭：建立嫌疑人排行榜。\n金泰来：建议先看看冰箱。\n金地雄：手机在冰箱旁边。\n会议结论：再开一次会确认结论。",
+        "kind": "note",
+        "time": "21:16",
+        "sender": "群聊秘书"
       }
     ],
     "calendar": [
       {
-        "id": "test-item-calendar",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "mail": [
-      {
-        "id": "test-item-mail",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "clock": [
-      {
-        "id": "test-item-clock",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
+        "id": "calendar-fridge",
+        "title": "全员冷静时间",
+        "body": "21:20｜排练室冰箱旁\n备注：手机在冰箱上方。谁都不许再开会。",
+        "kind": "event",
+        "time": "21:20",
+        "sender": "日历"
       }
     ],
     "reminders": [
       {
-        "id": "test-item-reminders",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
+        "id": "reminder-return",
+        "title": "把手机还给失主",
+        "body": "找到手机后请归还。不要尝试解锁真实账号，也不要翻找私人信息。此故事为虚构模拟。",
         "kind": "text",
-        "meta": {}
-      }
-    ],
-    "files": [
-      {
-        "id": "test-item-files",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "music": [
-      {
-        "id": "test-item-music",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "maps": [
-      {
-        "id": "test-item-maps",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "weather": [
-      {
-        "id": "test-item-weather",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "wallet": [
-      {
-        "id": "test-item-wallet",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "health": [
-      {
-        "id": "test-item-health",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "find": [
-      {
-        "id": "test-item-find",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "calculator": [
-      {
-        "id": "test-item-calculator",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "settings": [
-      {
-        "id": "test-item-settings",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "weibo": [
-      {
-        "id": "test-item-weibo",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "redbook": [
-      {
-        "id": "test-item-redbook",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "douyin": [
-      {
-        "id": "test-item-douyin",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "bilibili": [
-      {
-        "id": "test-item-bilibili",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "alipay": [
-      {
-        "id": "test-item-alipay",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "taobao": [
-      {
-        "id": "test-item-taobao",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "netease": [
-      {
-        "id": "test-item-netease",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "delivery": [
-      {
-        "id": "test-item-delivery",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "forum": [
-      {
-        "id": "test-item-forum",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
+        "time": "21:24",
+        "sender": "提醒事项"
       }
     ],
     "instagram": [
       {
-        "id": "test-item-instagram",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "tiktok": [
-      {
-        "id": "test-item-tiktok",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
+        "id": "ig-story-floor",
+        "title": "今天的艺术摄影",
+        "body": "📸 #地板也有梦想 #失焦才是风格\n点赞数：五个人，评论数：五十七条，全部在问手机在哪。",
+        "kind": "post",
+        "time": "21:13",
+        "sender": "ZEROBASEONE（虚构故事账号）",
+        "meta": {
+          "story": "true"
+        }
       }
     ],
     "twitter": [
       {
-        "id": "test-item-twitter",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
+        "id": "x-post-case",
+        "title": "现场播报",
+        "body": "实时更新：五名嫌疑人正在找一部手机。当前进展：找到了六部手机，但没有一部是失踪的那部。",
+        "kind": "post",
+        "time": "21:18",
+        "sender": "朴乾旭（虚构故事账号）",
+        "likes": 1025,
+        "comments": [
+          "建议检查冰箱",
+          "建议给冰箱做口供",
+          "请问地板有不在场证明吗"
+        ]
       }
     ],
-    "youtube": [
+    "files": [
       {
-        "id": "test-item-youtube",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
+        "id": "file-evidence",
+        "title": "案件编号 1025.txt",
+        "body": "线索一：蓝色星星手机壳。\n线索二：最后一张照片有冰箱反光。\n线索三：日历提醒时间为 21:20。\n密码提示：月份和日期连起来。",
+        "kind": "file",
+        "time": "21:21",
+        "sender": "文件"
       }
     ],
-    "snapchat": [
+    "safari": [
       {
-        "id": "test-item-snapchat",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
+        "id": "safari-search",
+        "title": "搜索记录",
+        "body": "搜索：‘手机放冰箱上面会怎样’\n搜索：‘手机失踪后如何保持群聊秩序’\n搜索：‘冰箱能不能当临时失物招领处’",
         "kind": "text",
-        "meta": {}
-      }
-    ],
-    "facebook": [
-      {
-        "id": "test-item-facebook",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "reddit": [
-      {
-        "id": "test-item-reddit",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "spotify": [
-      {
-        "id": "test-item-spotify",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "netflix": [
-      {
-        "id": "test-item-netflix",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "pinterest": [
-      {
-        "id": "test-item-pinterest",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      }
-    ],
-    "threads": [
-      {
-        "id": "test-item-threads",
-        "title": "测试内容",
-        "body": "这是一条测试内容。",
-        "sender": "测试用户",
-        "kind": "text",
-        "meta": {}
-      },
-      {
-        "id": "test-threads-message-1",
-        "title": "测试会话1",
-        "body": "这是一条测试消息。",
-        "sender": "测试联系人1",
-        "folder": "私信"
-      },
-      {
-        "id": "test-threads-activity-1",
-        "title": "测试动态1",
-        "body": "这是一条测试回复动态。",
-        "sender": "测试用户1",
-        "meta": {
-          "activityType": "reply"
-        }
-      },
-      {
-        "id": "test-threads-message-2",
-        "title": "测试会话2",
-        "body": "这是一条测试消息。",
-        "sender": "测试联系人2",
-        "folder": "私信"
-      },
-      {
-        "id": "test-threads-activity-2",
-        "title": "测试动态2",
-        "body": "这是一条测试回复动态。",
-        "sender": "测试用户2",
-        "meta": {
-          "activityType": "reply"
-        }
-      },
-      {
-        "id": "test-threads-message-3",
-        "title": "测试会话3",
-        "body": "这是一条测试消息。",
-        "sender": "测试联系人3",
-        "folder": "私信"
-      },
-      {
-        "id": "test-threads-activity-3",
-        "title": "测试动态3",
-        "body": "这是一条测试回复动态。",
-        "sender": "测试用户3",
-        "meta": {
-          "activityType": "reply"
-        }
-      }
-    ],
-    "appstore": [
-      {
-        "id": "test-appstore",
-        "title": "测试内容",
-        "body": "这是一条测试内容。"
+        "time": "21:25",
+        "sender": "浏览器"
       }
     ]
   },
-  "variables": {},
-  "events": [],
-  "tests": []
+  "variables": {
+    "foundClue": false
+  },
+  "events": [
+    {
+      "id": "story-start",
+      "label": "开始调查",
+      "type": "start",
+      "next": [
+        "ending-choice"
+      ]
+    },
+    {
+      "id": "ending-choice",
+      "label": "你准备怎么处理这部手机？",
+      "type": "choice",
+      "next": [
+        "ending-return",
+        "ending-group-admin",
+        "ending-chaos"
+      ]
+    },
+    {
+      "id": "read-reflection",
+      "label": "查看反光照片",
+      "type": "event",
+      "event": "read",
+      "target": "clue-photo-reflection",
+      "actions": [
+        {
+          "type": "clue",
+          "key": "reflection",
+          "value": true
+        },
+        {
+          "type": "unlock",
+          "key": "note-star-locked",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "read-checklist",
+      "label": "查看行动清单",
+      "type": "event",
+      "event": "read",
+      "target": "note-checklist",
+      "actions": [
+        {
+          "type": "clue",
+          "key": "checklist",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "ending-return",
+      "label": "完美归还结局",
+      "type": "ending",
+      "actions": [
+        {
+          "type": "ending",
+          "key": "return",
+          "value": "完美归还"
+        }
+      ]
+    },
+    {
+      "id": "ending-group-admin",
+      "label": "群聊管理员结局",
+      "type": "ending",
+      "actions": [
+        {
+          "type": "ending",
+          "key": "admin",
+          "value": "群聊管理员"
+        }
+      ]
+    },
+    {
+      "id": "ending-chaos",
+      "label": "冰箱复盘结局",
+      "type": "ending",
+      "actions": [
+        {
+          "type": "ending",
+          "key": "fridge",
+          "value": "冰箱复盘"
+        }
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "name": "找到线索并归还手机",
+      "steps": [
+        {
+          "target": "clue-photo-reflection",
+          "event": "read"
+        },
+        {
+          "target": "note-checklist",
+          "event": "read"
+        },
+        {
+          "target": "",
+          "choose": "ending-return"
+        }
+      ],
+      "ending": "完美归还",
+      "expectUnlocked": [
+        "note-star-locked"
+      ]
+    },
+    {
+      "name": "成为群聊管理员",
+      "steps": [
+        {
+          "target": "",
+          "choose": "ending-group-admin"
+        }
+      ],
+      "ending": "群聊管理员",
+      "expectUnlocked": []
+    },
+    {
+      "name": "触发冰箱复盘",
+      "steps": [
+        {
+          "target": "",
+          "choose": "ending-chaos"
+        }
+      ],
+      "ending": "冰箱复盘",
+      "expectUnlocked": []
+    }
+  ]
 }
