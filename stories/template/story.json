@@ -3,7 +3,7 @@
   "id": "zb1-found-phone-comedy",
   "title": "捡到 ZEROBASEONE 的手机",
   "description": "一场从排练室开始、最终在冰箱边结束的爆笑寻机行动。纯属虚构的粉丝向互动故事。",
-  "revision": 3,
+  "revision": 4,
   "phone": {
     "owner": "失物招领处的你",
     "date": "2026-10-25",
@@ -327,6 +327,63 @@
           "time": "21:12"
         }
       ]
+    },
+    {
+      "id": "chat-hanbin",
+      "app": "kakao",
+      "title": "成韩彬",
+      "participants": [
+        "owner",
+        "hanbin"
+      ],
+      "messages": [
+        {
+          "id": "hb01",
+          "title": "",
+          "body": "我把调查分成三个阶段：确认失踪、寻找线索、停止开会。",
+          "senderId": "hanbin",
+          "time": "21:08"
+        },
+        {
+          "id": "hb02",
+          "title": "",
+          "body": "目前前两个阶段进展缓慢，第三个阶段暂时没有人执行。",
+          "senderId": "hanbin",
+          "time": "21:11"
+        },
+        {
+          "id": "hb03",
+          "title": "",
+          "body": "找到手机后请通知我，我会组织一次简短的归还会议。",
+          "senderId": "hanbin",
+          "time": "21:24"
+        }
+      ]
+    },
+    {
+      "id": "chat-gunwook",
+      "app": "kakao",
+      "title": "朴乾旭的推理现场",
+      "participants": [
+        "owner",
+        "gunwook"
+      ],
+      "messages": [
+        {
+          "id": "gw01",
+          "title": "",
+          "body": "嫌疑人有五个，手机有六部，冰箱有一个。",
+          "senderId": "gunwook",
+          "time": "21:10"
+        },
+        {
+          "id": "gw02",
+          "title": "",
+          "body": "结论：冰箱的嫌疑最大。我已经给它画了关系图。",
+          "senderId": "gunwook",
+          "time": "21:12"
+        }
+      ]
     }
   ],
   "content": {
@@ -354,6 +411,14 @@
         "kind": "text",
         "time": "21:22",
         "sender": "线索系统"
+      },
+      {
+        "id": "photo-five-phones",
+        "title": "五部手机的合照",
+        "body": "照片里五个人都举着手机，背景架子上还放着第六部手机。备注：‘谁的手机？先拍照留念。’",
+        "kind": "image",
+        "time": "21:14",
+        "sender": "相册"
       }
     ],
     "notes": [
@@ -382,6 +447,15 @@
         "kind": "note",
         "time": "21:16",
         "sender": "群聊秘书"
+      },
+      {
+        "id": "note-secret-ending",
+        "title": "隐藏结局备忘录",
+        "body": "真相：五个人本来准备拍手机失踪挑战，拍完后把手机留在冰箱旁边。每个人都以为另一个人会拿走。案件的真正原因不是阴谋，而是‘全员负责’等于‘没人负责’。冰箱获得本次事件的最佳配角奖。",
+        "kind": "note",
+        "time": "21:29",
+        "sender": "机主",
+        "hidden": true
       }
     ],
     "calendar": [
@@ -467,16 +541,6 @@
       ]
     },
     {
-      "id": "ending-choice",
-      "label": "你准备怎么处理这部手机？",
-      "type": "choice",
-      "next": [
-        "ending-return",
-        "ending-group-admin",
-        "ending-chaos"
-      ]
-    },
-    {
       "id": "read-reflection",
       "label": "查看反光照片",
       "type": "event",
@@ -507,6 +571,17 @@
           "key": "checklist",
           "value": true
         }
+      ]
+    },
+    {
+      "id": "ending-choice",
+      "label": "你准备怎么处理这部手机？",
+      "type": "choice",
+      "next": [
+        "ending-return",
+        "ending-group-admin",
+        "ending-chaos",
+        "ending-secret"
       ]
     },
     {
@@ -544,22 +619,33 @@
           "value": "冰箱复盘"
         }
       ]
+    },
+    {
+      "id": "ending-secret",
+      "label": "隐藏真相结局",
+      "type": "ending",
+      "actions": [
+        {
+          "type": "ending",
+          "key": "secret",
+          "value": "隐藏真相"
+        }
+      ]
     }
   ],
   "tests": [
     {
-      "name": "找到线索并归还手机",
+      "name": "完美归还手机",
       "steps": [
         {
-          "target": "clue-photo-reflection",
-          "event": "read"
+          "event": "read",
+          "target": "clue-photo-reflection"
         },
         {
-          "target": "note-checklist",
-          "event": "read"
+          "event": "read",
+          "target": "note-checklist"
         },
         {
-          "target": "",
           "choose": "ending-return"
         }
       ],
@@ -569,10 +655,9 @@
       ]
     },
     {
-      "name": "成为群聊管理员",
+      "name": "群聊管理员",
       "steps": [
         {
-          "target": "",
           "choose": "ending-group-admin"
         }
       ],
@@ -580,14 +665,23 @@
       "expectUnlocked": []
     },
     {
-      "name": "触发冰箱复盘",
+      "name": "冰箱复盘",
       "steps": [
         {
-          "target": "",
           "choose": "ending-chaos"
         }
       ],
       "ending": "冰箱复盘",
+      "expectUnlocked": []
+    },
+    {
+      "name": "隐藏真相",
+      "steps": [
+        {
+          "choose": "ending-secret"
+        }
+      ],
+      "ending": "隐藏真相",
       "expectUnlocked": []
     }
   ]
